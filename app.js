@@ -70,11 +70,11 @@ function readTextFromButton(btn) {
     if (!speechSynthesis.paused) {
       speechSynthesis.pause();
       isPaused = true;
-      showToast('Paused. Click again to stop.', false);
+      showToast('Paused. Click again to resume.', false);
     } else {
-      speechSynthesis.cancel();
+      speechSynthesis.resume();
       isPaused = false;
-      hideToast();
+      showToast('Reading aloud...', false);
     }
     return;
   }

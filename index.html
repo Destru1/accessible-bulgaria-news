@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Bulgaria News | News, Culture, and Travel</title>
+  <meta name="description" content="Accessible Bulgaria News: News, culture, and travel from Bulgaria for everyone. High-contrast, accessible, and inclusive news portal." />
+  <meta property="og:title" content="Accessible Bulgaria News" />
+  <meta property="og:description" content="News, culture, and travel from Bulgaria for everyone. High-contrast, accessible, and inclusive news portal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://accessibility-html.vercel.app/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519429753079-3b0f0a95dea8?q=80&w=2070&auto=format&fit=crop" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1 id="site-title">Accessible Bulgaria News</h1>
+    <p id="site-desc">News, culture, and travel from Bulgaria for everyone</p>
+  </header>
+
+  <div class="controls" aria-label="Display controls">
+    <button onclick="toggleDark()" aria-pressed="false" aria-label="Toggle dark mode">🌓 Toggle Contrast</button>
+    <button onclick="toggleFont()" aria-pressed="false" aria-label="Toggle font size">🔠 Toggle Font Size</button>
+  </div>
+
+  <main class="container" aria-labelledby="site-title" aria-describedby="site-desc">
+    <div class="articles-holder" aria-label="News articles">
+
+    <section class="article" data-read-order="image-title-paragraph" aria-label="Sofia Named Europe's Fastest-Growing Tech Hub article">
+        <div class="image-container">
+        
+          <img src="https://images.unsplash.com/photo-1519429753079-3b0f0a95dea8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image of Sofia city" />
+        </div>
+      <h2>Sofia Named Europe's Fastest-Growing Tech Hub</h2>
+      <p>
+        Sofia has been recognized as the fastest-growing technology hub in Europe, attracting international investments and startups.
+      </p>
+      <div class="article-actions">
+        <a href="article-sofia.html" class="read-more" aria-label="Read full article about Sofia Named Europe's Fastest-Growing Tech Hub">Read More</a>
+        <button class="read-btn" aria-label="Read Sofia article aloud">🔊 Read Aloud</button>
+      </div>
+    </section>
+
+    <section class="article" data-read-order="image-title-paragraph" aria-label="Rose Festival Brings Tourists to Kazanlak article">
+        <div class="image-container">
+        
+          <img src="https://images.unsplash.com/photo-1718078700205-0482971308da?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rose Valley in Bulgaria" />
+        </div>
+      <h2>🌹 Rose Festival Brings Tourists to Kazanlak</h2>
+      <p>
+        The annual Rose Festival in Kazanlak has drawn thousands of visitors from around the world. The event celebrates Bulgaria's centuries-old tradition of rose oil production.
+      </p>
+      <div class="article-actions">
+        <a href="article-rose-festival.html" class="read-more" aria-label="Read full article about Rose Festival in Kazanlak">Read More</a>
+        <button class="read-btn" aria-label="Read Rose Festival article aloud">🔊 Read Aloud</button>
+      </div>
+    </section>
+
+    <section class="article" data-read-order="image-title-paragraph" aria-label="Bulgarian Black Sea Resorts Open for Summer article">
+        <div class="image-container">
+        
+          <img src="https://images.unsplash.com/photo-1683653417446-0c7009151621?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Black Sea coast" />
+      </div>
+      <h2>🏖️ Bulgarian Black Sea Resorts Open for Summer</h2>
+      <p>
+        Bulgaria's Black Sea resorts have officially opened for the summer season. Sunny Beach, Golden Sands, and other destinations expect record numbers of tourists.
+      </p>
+      <div class="article-actions">
+        <a href="article-black-sea.html" class="read-more" aria-label="Read full article about Bulgarian Black Sea Resorts Open for Summer">Read More</a>
+        <button class="read-btn" aria-label="Read Black Sea Resorts article aloud">🔊 Read Aloud</button>
+      </div>
+    </section>
+
+    <section class="article" data-read-order="image-title-paragraph" aria-label="Plovdiv Restores Ancient Roman Theater article">
+      <div class="image-container">
+        
+        <img src="https://images.unsplash.com/photo-1672691993652-c0dc435011cc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plovdiv Old Town" />
+      </div>
+      <h2>🏛️ Plovdiv Restores Ancient Roman Theater</h2>
+      <p>
+        The ancient Roman theater in Plovdiv has reopened after extensive restoration. The site, one of the best-preserved in Europe, will host concerts and cultural events.
+      </p>
+      <div class="article-actions">
+        <a href="article-plovdiv.html" class="read-more" aria-label="Read full article about Plovdiv Restores Ancient Roman Theater">Read More</a>
+        <button class="read-btn" aria-label="Read Plovdiv article aloud">🔊 Read Aloud</button>
+      </div>
+    </section>
+
+    <section class="article" data-read-order="image-title-paragraph" aria-label="Bulgarian Cuisine Gains International Recognition article">
+        <div class="image-container">
+        
+          <img src="https://images.unsplash.com/photo-1609708433632-b3509a7ea881?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bulgarian traditional food" />
+        </div>
+      <h2>🍲 Bulgarian Cuisine Gains International Recognition</h2>
+      <p>
+        Bulgarian dishes like banitsa, shopska salad, and yogurt are gaining popularity abroad.
+      </p>
+      <div class="article-actions">
+        <a href="article-cuisine.html" class="read-more" aria-label="Read full article about Bulgarian Cuisine Gains International Recognition">Read More</a>
+        <button class="read-btn" aria-label="Read Cuisine article aloud">🔊 Read Aloud</button>
+      </div>
+    </section>
+
+    <section class="article" data-read-order="image-title-paragraph" aria-label="Rila Monastery Celebrates 1,100 Years article">
+        <div class="image-container">
+        
+          <img src="https://images.unsplash.com/photo-1663230083809-4b86f6407a4c?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rila Monastery" />
+        </div>
+      <h2>⛪ Rila Monastery Celebrates 1,100 Years</h2>
+      <p>
+        The Rila Monastery, a UNESCO World Heritage site, marks its 1,100th anniversary with special exhibitions and religious ceremonies.
+      </p>
+      <div class="article-actions">
+        <a href="article-rila.html" class="read-more" aria-label="Read full article about Rila Monastery Celebrates 1,100 Years">Read More</a>
+        <button class="read-btn" aria-label="Read Rila article aloud">🔊 Read Aloud</button>
+      </div>
+    
+    </section>
+ </div>
+  </main>
+
+  <section class="newsletter-section" aria-labelledby="newsletter-title">
+    <div class="newsletter-container">
+      <h2 id="newsletter-title">Subscribe to our Newsletter</h2>
+      <p>Get the latest news about Bulgaria delivered to your inbox. Stay informed and never miss an update!</p>
+      <form class="newsletter-form" autocomplete="off" aria-label="Newsletter subscription form">
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required aria-label="Email address" />
+        <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+      </form>
+      <div id="newsletter-success" class="newsletter-success" style="display:none;" role="status" aria-live="polite">Thank you for subscribing!</div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
